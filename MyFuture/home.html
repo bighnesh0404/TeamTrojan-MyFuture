@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<div>
+<img class="mySlides w3-animate-side" src="2.jpg" align="left" height="700" width="1500">
+<img class="mySlides w3-animate-side" src="1.jpg" align="left" height="700" width="1500">
+<img class="mySlides w3-animate-side" src="3.jpg" align="left" height="700" width="1500">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+
+</script>
+<hr>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: 1000;
+}
+
+.overlay {
+  position: absolute;
+  top: 1200;
+  bottom: ;
+  left: 100;
+  right: 250;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+h1{
+  color:red;
+  font-size: 250%;
+  font-style: italic;
+}
+</style>
+</head>
+<body style="background-color: grey;">
+<h1 style="text-align: center;">Opportunities dont happen, we create them</h1>
+<p style="font-size: 150%">
+   <h1>Which one would you like to choose?<br>
+  <a href="file:///C:/Users/Sai_HelloWorld/Desktop/MyFuture/engineering.html"> Engineering</a><br>
+  <a href="file:///C:/Users/Sai_HelloWorld/Desktop/MyFuture/medical/medical.html"> Medical</a><br>
+  <a href="file:///C:/Users/Sai_HelloWorld/Desktop/MyFuture/Mark%202/commerce.html"> Commerce</a><br>
+  <a href="file:///C:/Users/Sai_HelloWorld/Desktop/MyFuture/arts.htm"> Arts</a></h1>
+</body>
+</html>
+
+
+
